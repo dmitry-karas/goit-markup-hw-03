@@ -20,7 +20,7 @@ primary-background-color:#ffffff
   --secondary-background-color: #f5f4fa;
 }
 
-/* ========== UTILITIES ========== */
+/* ========== UTILITIES========== */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -33,6 +33,16 @@ primary-background-color:#ffffff
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 2px solid red;
+}
+/* .no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+} */
 /* ========== END UTILITIES ========== */
 
 /* ========== BODY ========== */
@@ -47,10 +57,15 @@ a {
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 /* ========== END BODY ========== */
 
 /* ========== HEADER ========== */
+.header {
+  background-color: var(--primary-background-color);
+}
 .logo,
 .footer-logo {
   font-family: 'Raleway', sans-serif;
@@ -85,30 +100,43 @@ ul {
 
 /* ========== HERO ========== */
 .hero {
+  text-align: center;
+}
+.hero > .container {
   background-color: var(--hero-background-color);
 }
-.hero-title,
-.hero-button {
+.hero-title {
+  margin: 0 0 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
 }
 .hero-button {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  text-transform: none;
+  letter-spacing: 0.06em;
   background-color: var(--accent-color);
+  color: var(--white-text-color);
+  min-width: 200px;
+  padding: 10px 32px;
 }
 /* ========== END HERO ========== */
 
 /* ========== FEATURES ========== */
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.features-list {
+  margin-bottom: 94px;
+}
 .features-list-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -116,15 +144,18 @@ ul {
   color: var(--title-text-color);
 }
 .features-list-text {
+  margin: 0;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
 }
-/* ========== END FEATURES ========== */
 
 /* ========== SERVICES ========== */
+
 .services-title,
 .team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -132,11 +163,13 @@ ul {
   color: var(--title-text-color);
 }
 
-/* ========== END SERVICES ========== */
+/* ========== END FEATURES ========== */
 
 /* ========== TEAM ========== */
 .team {
   background-color: var(--secondary-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-name-title,
 .team-profession {
