@@ -72,6 +72,7 @@ ul {
 .navigation {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 .logo {
   margin-right: 93px;
@@ -130,6 +131,7 @@ ul {
 }
 .hero-title {
   margin: 0 0 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -138,14 +140,15 @@ ul {
   color: var(--white-text-color);
 }
 .hero-button {
+  min-width: 200px;
+  padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--white-text-color);
-  min-width: 200px;
-  padding: 10px 32px;
 }
 /* ========== END HERO ========== */
 
@@ -154,12 +157,20 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+/* .features-container {
+  justify-content: space-between;
+} */
 .features-list {
+  display: flex;
   margin-bottom: 94px;
+}
+.features-list-item + .features-list-item {
+  margin-left: 30px;
 }
 .features-list-title {
   margin-top: 0;
   margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -168,24 +179,31 @@ ul {
 }
 .features-list-text {
   margin: 0;
+
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
 }
 
 /* ========== SERVICES ========== */
-
 .services-title,
 .team-title {
   margin-top: 0;
   margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   color: var(--title-text-color);
 }
-
+.services-list {
+  display: flex;
+  justify-content: space-between;
+}
+.services-img {
+  display: block;
+}
 /* ========== END FEATURES ========== */
 
 /* ========== TEAM ========== */
@@ -202,6 +220,13 @@ ul {
   text-align: center;
   color: var(--title-text-color);
 }
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+.team-list-item {
+  background-color: var(--primary-background-color);
+}
 .team-profession {
   font-weight: 400;
   color: var(--primary-text-color);
@@ -213,7 +238,14 @@ ul {
 .footer {
   background-color: var(--footer-background-color);
 }
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -227,7 +259,12 @@ ul {
   line-height: 1.71;
   color: var(--primary-background-color);
 }
+.footer-address-text {
+  margin: 0;
+}
 .footer-address-link {
+  display: inline-block;
+  margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
 
