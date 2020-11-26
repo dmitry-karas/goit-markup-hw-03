@@ -18,6 +18,7 @@ primary-background-color:#ffffff
   --footer-background-color: #2f303a;
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
+  --border-primary-color: #eeeeee;
 }
 
 /* ========== UTILITIES========== */
@@ -66,6 +67,7 @@ ul {
 /* ========== HEADER ========== */
 .header {
   background-color: var(--primary-background-color);
+  border-bottom: 1px solid var(--border-primary-color);
 }
 .header .container {
   display: flex;
@@ -334,6 +336,9 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.portfolio-card-item {
+  border: 1px solid var(--border-primary-color);
 }
 .portfolio-card-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
