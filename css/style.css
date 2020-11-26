@@ -55,9 +55,10 @@ a {
   text-decoration: none;
 }
 ul {
-  list-style: none;
   padding: 0;
   margin: 0;
+
+  list-style: none;
 }
 /* ========== END BODY ========== */
 
@@ -67,7 +68,8 @@ ul {
 }
 .header .container {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  /* justify-content: space-around; */
 }
 .navigation {
   display: flex;
@@ -76,6 +78,7 @@ ul {
 }
 .logo {
   margin-right: 93px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -93,14 +96,11 @@ ul {
 .header-address-link + .header-address-link {
   margin-left: 20px;
 }
-.header-address {
-  align-items: center;
-}
 .navigation-link,
 .header-address-link {
   display: inline-block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 33px;
+  padding-bottom: 33px;
 }
 .navigation-link,
 .header-address {
@@ -164,6 +164,9 @@ ul {
   display: flex;
   margin-bottom: 94px;
 }
+.features-list-item {
+  width: 270px;
+}
 .features-list-item + .features-list-item {
   margin-left: 30px;
 }
@@ -201,16 +204,25 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-.services-img {
+.services-img,
+.team-img {
   display: block;
 }
 /* ========== END FEATURES ========== */
 
 /* ========== TEAM ========== */
 .team {
-  background-color: var(--secondary-background-color);
   padding-top: 94px;
   padding-bottom: 94px;
+
+  background-color: var(--secondary-background-color);
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+.team-list-item {
+  background-color: var(--primary-background-color);
 }
 .team-name-title,
 .team-profession {
@@ -220,14 +232,13 @@ ul {
   text-align: center;
   color: var(--title-text-color);
 }
-.team-list {
-  display: flex;
-  justify-content: space-between;
-}
-.team-list-item {
-  background-color: var(--primary-background-color);
+.team-name-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-profession {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 400;
   color: var(--primary-text-color);
 }
@@ -265,6 +276,7 @@ ul {
 .footer-address-link {
   display: inline-block;
   margin-top: 9px;
+
   color: rgba(255, 255, 255, 0.6);
 }
 
