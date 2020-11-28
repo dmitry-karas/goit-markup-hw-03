@@ -154,6 +154,7 @@ img {
   padding: 10px 32px;
   border: none;
   border-radius: 4px;
+  outline: none;
 
   font-weight: 700;
   font-size: 16px;
@@ -317,6 +318,7 @@ img {
   padding-left: 22px;
   border: none;
   border-radius: 4px;
+  outline: none;
 
   font-family: 'Roboto', sans-serif;
   font-style: normal;
