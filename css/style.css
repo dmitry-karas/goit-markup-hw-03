@@ -10,7 +10,7 @@
   --footer-background-color: #2f303a;
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
-  --border-primary-color: #eeeeee;
+  --border-color: #eeeeee;
 }
 /* ========== UTILITIES========== */
 .visually-hidden {
@@ -65,7 +65,7 @@ img {
 /* ========== HEADER ========== */
 .header {
   background-color: var(--primary-background-color);
-  border-bottom: 1px solid var(--border-primary-color);
+  border-bottom: 1px solid var(--border-color);
 }
 .header .container {
   display: flex;
@@ -98,8 +98,8 @@ img {
 .navigation-link,
 .header-address-link {
   display: inline-block;
-  padding-top: 33px;
-  padding-bottom: 33px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .navigation-link,
 .header-address {
@@ -353,9 +353,9 @@ img {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  border-left: 1px solid var(--border-primary-color);
-  border-right: 1px solid var(--border-primary-color);
-  border-bottom: 1px solid var(--border-primary-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 .portfolio-card-title {
   margin-bottom: 4px;
