@@ -76,12 +76,13 @@ img {
   align-items: center;
 }
 .logo {
-  margin-right: 93px;
-
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+.header .logo {
+  margin-right: 93px;
   color: #000;
 }
 .logo-segment,
@@ -264,14 +265,10 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-logo {
+.footer .logo {
   display: inline-block;
   margin-bottom: 20px;
 
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   color: #fff;
 }
 .footer-address-text,
@@ -294,6 +291,7 @@ img {
 /* ========== END FOOTER ========== */
 
 /* ********** PORTFOLIO ********** */
+
 .portfolio .container {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -371,3 +369,4 @@ img {
   line-height: 1.87;
   color: var(--primary-text-color);
 }
+/* ********** END PORTFOLIO ********** */
